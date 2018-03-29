@@ -25,163 +25,158 @@
     </script>
     <title>AA Meeting Finder</title>
   </head>
-  <header>
-    <div id="contact-links">
-      <p>info@seattleaa.org</p>
-      <p>(206)587-2838</p>
-    </div>
-    <nav id="nav-bar">
-        <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
-          <ul class="nav-ul">
-            <li class="active"><a id="homeNav" href="/">Home</a></li>
-            <li><a id="aboutNav" href="/about">About</a></li>
-          </ul>
-    </nav>
-    <img src="/imgs/aa-logo-transparent.png" alt="Alcoholics Anonymous logo">
-  </header>
   <body>
-    <h1>Seattle AA Meeting Finder</h1>
-    <h2>Information about and directions to today's Alcoholics Anonymous meetings in the Seattle area</h2>
-    <div id="map-div">
-      <table id="map-form">
-        <form id="form">
-          <select required name="Time of Day" id="input-time">
-            <option value="Morning">Morning (6:00AM - 11:59AM)</option>
-            <option value="Afternoon">Afternoon (12:00PM - 4:59PM)</option>
-            <option value="Evening">Evening (5:00PM - 8:59PM)</option>
-            <option value="Night">Night (9:00PM - 11:59PM)</option>
-          </select>
-          <select required name="Search Radius" id="input-radius">
-            <option value="1">1 Mile</option>
-            <option value="2">2 Miles</option>
-            <option value="3">3 Miles</option>
-            <option value="4">4 Miles</option>
-            <option value="5">5 Miles</option>
-            <option value="8">8 Miles</option>
-            <option value="10">10 Miles</option>
-            <option value="15">15 Miles</option>
-            <option value="20">20 Miles</option>
-          </select>
-          <input id ="submit" type="submit" value="Submit">
-        </form>
-      </table>
-    </div>
-    <div id="map-area">
-      <div id="google-map">
+    <header>
+      <div id="contact-links">
+        <p>info@seattleaa.org</p>
+        <p>(206)587-2838</p>
       </div>
-    </div>
+      <nav id="nav-bar">
+          <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
+            <ul class="nav-ul">
+              <li class="active"><a id="homeNav" href="/">Home</a></li>
+              <li><a id="aboutNav" href="/contact">Contact</a></li>
+            </ul>
+      </nav>
+      <img src="/imgs/aa-logo-transparent.png" alt="Alcoholics Anonymous logo">
+  </header>
+    <section id="home-data">
+      <h1>Seattle AA Meeting Finder</h1>
+      <h2>Information about and directions to today's Alcoholics Anonymous meetings in the Seattle area</h2>
+      <div id="map-div">
+        <table id="map-form">
+          <form id="form">
+            <select required name="Time of Day" id="input-time">
+              <option value="Morning">Morning (6:00AM - 11:59AM)</option>
+              <option value="Afternoon">Afternoon (12:00PM - 4:59PM)</option>
+              <option value="Evening">Evening (5:00PM - 8:59PM)</option>
+              <option value="Night">Night (9:00PM - 11:59PM)</option>
+            </select>
+            <select required name="Search Radius" id="input-radius">
+              <option value="1">1 Mile</option>
+              <option value="2">2 Miles</option>
+              <option value="3">3 Miles</option>
+              <option value="4">4 Miles</option>
+              <option value="5">5 Miles</option>
+              <option value="8">8 Miles</option>
+              <option value="10">10 Miles</option>
+              <option value="15">15 Miles</option>
+              <option value="20">20 Miles</option>
+            </select>
+            <input id ="submit" type="submit" value="Submit">
+          </form>
+        </table>
+      </div>
+      <div id="map-area">
+        <div id="google-map">
+        </div>
+      </div>
 
-      <table id="legend">
-        <h4 id="legend-thing">Chart Legend</h4>
-        <thead>
-          <th>Key</th>
-          <th>Meeting Specialty</th>
-        </thead>
-        <tr>
-          <td>an</td>
-          <td>Al-Anon meeting at same time and location</td>
-        </tr>
-        <tr>
-          <td>at</td>
-          <td>Alateen meeting at same time and location</td>
-        </tr>
-        <tr>
-          <td>cc</td>
-          <td>Child care available</td>
-        </tr>
-        <tr>
-          <td>gs</td>
-          <td>LGBT-friendly</td>
-        </tr>
-        <tr>
-          <td>mo</td>
-          <td>Men only</td>
-        </tr>
-        <tr>
-          <td>wo</td>
-          <td>Women only</td>
-        </tr>
-        <tr>
-          <td>asl</td>
-          <td>ASL interpreter</td>
-        </tr>
-        <tr>
-          <td>sp</td>
-          <td>Speaker meeting</td>
-        </tr>
-        <tr>
-          <td>ls</td>
-          <td>Literature study</td>
-        </tr>
-        <tr>
-          <td>ss</td>
-          <td>Español</td>
-        </tr>
-        <tr>
-          <td>wb</td>
-          <td>Wheelchair-accessible bathrooms</td>
-        </tr>
-        <tr>
-          <td>we</td>
-          <td>Wheelchair-accessible entrance</td>
-        </tr>
-        <tr>
-          <td>wp</td>
-          <td>Wheelchair-accessible parking</td>
-        </tr>
-        <tr>
-          <td>yp</td>
-          <td>Young people's meeting</td>
-        </tr>
-      </table>
+        <table id="legend">
+          <h4 id="legend-thing">Chart Legend</h4>
+          <thead>
+            <th>Key</th>
+            <th>Meeting Specialty</th>
+          </thead>
+          <tr>
+            <td>an</td>
+            <td>Al-Anon meeting at same time and location</td>
+          </tr>
+          <tr>
+            <td>at</td>
+            <td>Alateen meeting at same time and location</td>
+          </tr>
+          <tr>
+            <td>cc</td>
+            <td>Child care available</td>
+          </tr>
+          <tr>
+            <td>gs</td>
+            <td>LGBT-friendly</td>
+          </tr>
+          <tr>
+            <td>mo</td>
+            <td>Men only</td>
+          </tr>
+          <tr>
+            <td>wo</td>
+            <td>Women only</td>
+          </tr>
+          <tr>
+            <td>asl</td>
+            <td>ASL interpreter</td>
+          </tr>
+          <tr>
+            <td>sp</td>
+            <td>Speaker meeting</td>
+          </tr>
+          <tr>
+            <td>ls</td>
+            <td>Literature study</td>
+          </tr>
+          <tr>
+            <td>ss</td>
+            <td>Español</td>
+          </tr>
+          <tr>
+            <td>wb</td>
+            <td>Wheelchair-accessible bathrooms</td>
+          </tr>
+          <tr>
+            <td>we</td>
+            <td>Wheelchair-accessible entrance</td>
+          </tr>
+          <tr>
+            <td>wp</td>
+            <td>Wheelchair-accessible parking</td>
+          </tr>
+          <tr>
+            <td>yp</td>
+            <td>Young people's meeting</td>
+          </tr>
+        </table>
 
-    <section id ="meetings-area">
-      <table>
-        <h3>Meetings In Your Area:</h3>
-        <thead>
-          <th>Time</th>
-          <th>Group Name</th>
-          <th>Location</th>
-          <th>Other</th>
-        </thead>
-        <tbody id="meetings-table">
-        </tbody>
-      </table>
+      <section id ="meetings-area">
+        <table>
+          <h3>Meetings In Your Area:</h3>
+          <thead>
+            <th>Time</th>
+            <th>Group Name</th>
+            <th>Location</th>
+            <th>Other</th>
+          </thead>
+          <tbody id="meetings-table">
+          </tbody>
+        </table>
+      </section>
     </section>
 
-    <section id="about-us">
-      <header id="header-about-us"><div id="name-ul-div">
-      <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-      <ul class="names-ul" id="name-jacob">Jacob Evans</ul>
-      <ul class="names-ul" id="name-chelsea">Chelsea Dole</ul>
-      <ul class="names-ul" id="name-nathan">Nathan Moore</ul>
-      <ul class="names-ul" id="name-matt">Matt Favoino</ul>
-    </div></header>
+    <section id="contact">
       <div class="about-div" id="person-one">
-        <img id="img-one" class="image-class"  src="imgs/laptop-img-sizes/jacob-new.jpg" alt="">
-          <div class="bio-class"  id="bio-div-one"><section id="bio-section-one">Raised in Hawaii, joined the Air Force Security Forces after I graduated King Kekaulike High School. Also graduated University of Hawaii Maui College, and spent time in the Air Force as Security Forces Airman.
-          After deciding to get into the tech industry through computer science, I decided to get my foot in the door in a big way by starting into it as a developer. Ideally using my VA benefits while working for a company to further my career. My family is my driving force, my daughter Gypsy my willpower. Will write code for cash.</section></div>
-      </div>
-      <div class="about-div" id="person-two">
-        <img class="image-class" src="imgs/laptop-img-sizes/chelsea-new.jpg" alt="">
-          <div class="bio-class" id="bio-div-two"><section id="bio-section-two">Chelsea entered Code Fellows with a background in economics and politics, which she is excited combine with software development. When not coding, she enjoys reading, making mix playlists for friends, kayaking, and swing dancing.</section></div>
-      </div>
-      <div class="about-div" id="person-three">
-        <img class="image-class" src="imgs/laptop-img-sizes/nathan-new.jpg" alt="">
-          <div class="bio-class" id="bio-div-three"><section id="bio-section-three">Nathan is a Seattle native, an opera fan, and a giant nerd. His favorite food is pickles, he prefers dogs to cats, and he idolizes Jean-Luc Picard.</section></div>
-      </div>
-      <div class="about-div" id="person-four">
-        <img class="image-class" src="imgs/laptop-img-sizes/matt-new.png" alt="">
-         <div class="bio-class" id="bio-div-four"> <section id="bio-section-four">Matt is excited about trying to connect people to local AA meetings with minimal friction. In his free time, Matt likes watching hockey, reading, and learning new things.</section></div>
-      </div>
-
+        <h3>Contact</h3>
+        <p id="contact-blurb">The Seattle Alcoholics Anonymous Meeting Finder application is a project of Nathan Moore, Chelsea Dole, Matt Favoino, and Jacob Evans as part of Code Fellows. It is not affiliated with Seattle AA Intergroup. To contact either the developers or Seattle AA, please use the contact info below.</p>
+        <ul id="contact-info-ul">
+          <li id="contact-list">Developers:</li>
+          <li><ul>
+            <li id="nathan-email">ncmoore1986@gmail.com</li>
+          </ul></li>
+        </ul>
+        <ul id="contact-info-ul">
+          <li id="contact-list">Seattle AA Intergroup:</li>
+          <li><ul>
+            <li>info@seattleaa.org</li>
+            <li>(206)587-2838</li>
+          </ul></li>
+      </ul>
+    </section>
   </body>
   
   <script src="scripts/views/hamburgerMenu.js"></script>
   <script src="scripts/views/FormView.js"></script>
   <script src="scripts/views/mapview.js"></script>
-  <script src="scripts/models/form.js"></script>
+<!--   <script src="scripts/models/form.js"></script>-->
   <script src="scripts/controllers/dateController.js"></script>
+  <script src="scripts/controllers/mapController.js"></script>
   <script src="scripts/controllers/aboutController.js"></script>
   <script src="scripts/views/meetingTableView.js"></script>
   <script type="text/javascript">
